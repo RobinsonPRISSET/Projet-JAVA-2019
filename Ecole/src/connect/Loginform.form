@@ -71,10 +71,7 @@
                               <Component id="jTextField_Username" alignment="0" max="32767" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="lbl_U" min="-2" max="-2" attributes="0"/>
-                              <Component id="lbl_p" min="-2" max="-2" attributes="0"/>
-                          </Group>
+                          <Component id="lbl_U" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace pref="96" max="32767" attributes="0"/>
@@ -96,7 +93,6 @@
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jPasswordField1" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="lbl_p" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
@@ -111,7 +107,7 @@
       <SubComponents>
         <Component class="javax.swing.JLabel" name="jLabel1">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Loginform"/>
+            <Property name="text" type="java.lang.String" value="Connectez vous "/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel2">
@@ -145,11 +141,6 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="lbl_U">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="*"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="lbl_p">
           <Properties>
             <Property name="text" type="java.lang.String" value="*"/>
           </Properties>
