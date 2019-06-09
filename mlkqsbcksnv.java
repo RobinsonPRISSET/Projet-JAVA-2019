@@ -76,23 +76,78 @@ public class reporting extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+    
+     private void initComponents() {
+
+        jLabel1 = new javax.swing.JLabel();
+        jToggleButton1 = new javax.swing.JToggleButton();
+        jToggleButton2 = new javax.swing.JToggleButton();
+        jToggleButton3 = new javax.swing.JToggleButton();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(null);
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
+        jLabel1.setText("Page de Reporting");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(630, 730, 250, 25);
+
+        jToggleButton1.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
+        jToggleButton1.setText("Retour page principale");
+        jToggleButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jToggleButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jToggleButton1);
+        jToggleButton1.setBounds(1111, 730, 240, 33);
+
+        jToggleButton2.setText("jToggleButton2");
+        jToggleButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jToggleButton2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jToggleButton2);
+        jToggleButton2.setBounds(610, 340, 141, 29);
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/projet_java/ece.png"))); // NOI18N
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(-50, -30, 1530, 850);
+        
+        
+        jToggleButton3.setText("jToggleButton3");
+        jToggleButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jToggleButton3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jToggleButton3);
+        jToggleButton3.setBounds(610, 340, 141, 29);
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/projet_java/ece.png"))); // NOI18N
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(-50, -30, 1530, 850);
+        
+
+        setSize(new java.awt.Dimension(1402, 845));
+        setLocationRelativeTo(null);
+    }// </editor-fold>//GEN-END:initComponents
+    
+    
+    
+    
+    
     private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
  principale2 f=new principale2();
 f.setVisible(true);
 this.hide();       
-
-
-
-
-
-
-
-
-
-
-
     }//GEN-LAST:event_jToggleButton1ActionPerformed
 
+   
+    
     private void jToggleButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton2ActionPerformed
        
         try {
@@ -111,7 +166,7 @@ this.hide();
         }
         
         
-    private void jToggleButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton2ActionPerformed
+    /*private void jToggleButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton2ActionPerformed
        
         try {
             String query = "SELECT  FROM ";
@@ -120,11 +175,13 @@ this.hide();
             stmt.executeUpdate(query);
             
             JFreeChart chart = ChartFactory.createBarChart("Répartition des notes", "Numéro d'évaluation", "Moyenne", dataset);
+            ChartFrame frame = new ChartFrame("Répartition des notes", chart);
+            frame.setVisible(true);
         }
         
         catch(SQLException e){
             System.out.println(e.getMessage());
-        }
+        }*/
         
         
         
